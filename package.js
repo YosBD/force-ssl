@@ -1,9 +1,12 @@
 Package.describe({
   summary: "Require this application to use HTTPS",
-  version: "1.0.6"
+  version: "0.0.1",
+  name: "yosbd:force-ssl",
+  git: "https://github.com/YosBD/force-ssl.git"
 });
 
 Package.onUse(function (api) {
+  api.versionsFrom('METEOR@0.9.4');
   api.use('webapp', 'server');
   api.use('underscore');
   // make sure we come after livedata, so we load after the sockjs

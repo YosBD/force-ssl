@@ -41,7 +41,7 @@ httpServer.addListener('request', function (req, res) {
   if (!isLocal && !isSsl) {
     // connection is not cool. send a 302 redirect!
 
-    var host = url.parse(Meteor.absoluteUrl()).hostname;
+    var host = req.connection.httpHeaders.host;
 
     // strip off the port number. If we went to a URL with a custom
     // port, we don't know what the custom SSL port is anyway.

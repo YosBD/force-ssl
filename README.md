@@ -1,5 +1,9 @@
 # force-ssl
 
+A fork of Meteor 'force ssl' package which does not requires "ROOT_URL".
+It simply adds https to the original url.
+Supporting multiple domains handled by the same meteor server!!!
+
 This package, part of [Webapp](https://www.meteor.com/webapp), causes
 Meteor to redirect insecure connections (HTTP) to a secure URL
 (HTTPS). Use this package to ensure that communication to the server
