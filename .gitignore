@@ -1,1 +1,19 @@
 .build*
+
+/node_modules
+/tests/failures
+# IDE files
+.idea
+.eclipse
+
+# NPM files
+packages/npm-container/**
+
+# UNIX files
+*.swp
+
+# Tests node_modules
+tests/cucumber/node_modules/*
+
+#build output
+output
